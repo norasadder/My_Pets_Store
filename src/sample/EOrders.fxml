@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EOrdersController">
+    <children>
+        <AnchorPane layoutX="35.0" layoutY="105.0" prefHeight="465.0" prefWidth="792.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+            <children>
+                <HBox layoutX="3.0" prefHeight="46.0" prefWidth="785.0">
+                    <children>
+                        <JFXButton onAction="#switchTheScene" prefHeight="46.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" styleClass="btn" stylesheets="@Style.css" text="Profile" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/userMain.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="113.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Home" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="123.0" style="-fx-alignment: left; -fx-background-color: #4e4766;" styleClass="btn" stylesheets="@Style.css" text="Orders" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Order.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="122.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Pets" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Animal.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="113.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Accessories" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Necktie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="105.0" styleClass="btn" stylesheets="@Style.css" text="Suppliers" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/supplier.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="103.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Log out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            <AnchorPane layoutX="25.0" layoutY="77.0" prefHeight="356.0" prefWidth="225.0">
+               <children>
+                  <TableView fx:id="ordersTableView" layoutY="3.0" prefHeight="349.0" prefWidth="227.0">
+                    <columns>
+                      <TableColumn fx:id="oidColumn" prefWidth="75.0" text="Order ID" />
+                      <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Order Date" />
+                        <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Total Price" />
+                        <TableColumn fx:id="pColumn" prefWidth="75.0" text="Processing" />
+                        <TableColumn fx:id="oColumn" prefWidth="75.0" text="On the way" />
+                        <TableColumn fx:id="dColumn" prefWidth="75.0" text="Delivered" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="587.0" layoutY="108.0" prefHeight="293.0" prefWidth="190.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+               <children>
+                  <VBox prefHeight="293.0" prefWidth="181.0">
+                     <children>
+                        <HBox prefHeight="22.0" prefWidth="256.0" />
+                        <HBox prefHeight="63.0" prefWidth="256.0">
+                           <children>
+                              <HBox prefHeight="61.0" prefWidth="75.0" />
+                              <TextField fx:id="oidScene" prefHeight="42.0" prefWidth="197.0" promptText="OID" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                              <HBox prefHeight="61.0" prefWidth="59.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="256.0" />
+                        <HBox prefHeight="143.0" prefWidth="256.0">
+                           <children>
+                              <VBox prefHeight="133.0" prefWidth="274.0">
+                                 <children>
+                                    <HBox prefHeight="37.0" prefWidth="256.0">
+                                       <children>
+                                          <HBox prefHeight="35.0" prefWidth="67.0" />
+                                          <CheckBox fx:id="pCB" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Processing" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets right="5.0" />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </CheckBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="256.0" />
+                                    <HBox prefHeight="37.0" prefWidth="256.0">
+                                       <children>
+                                          <HBox prefHeight="35.0" prefWidth="59.0" />
+                                          <CheckBox fx:id="oCB" mnemonicParsing="false" prefHeight="37.0" prefWidth="127.0" text="On The Way" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </CheckBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="16.0" prefWidth="256.0" />
+                                    <HBox prefHeight="37.0" prefWidth="256.0">
+                                       <children>
+                                          <HBox prefHeight="35.0" prefWidth="58.0" />
+                                          <CheckBox fx:id="dCB" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Delievered" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </CheckBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="256.0" />
+                        <HBox prefHeight="63.0" prefWidth="256.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="184.0">
+                                 <children>
+                                    <JFXButton onAction="#deleteOrder" prefHeight="51.0" prefWidth="92.0" style="-fx-background-color: #F08080; -fx-background-radius: 20;" text="Delete order" textFill="WHITE" />
+                                    <JFXButton onAction="#getTrack" prefHeight="51.0" prefWidth="92.0" style="-fx-background-color: #8cd2c1; -fx-background-radius: 20;" text="Save Track" textFill="WHITE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="256.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="orderProductTableView" layoutX="344.0" layoutY="80.0" prefHeight="349.0" prefWidth="227.0">
+               <columns>
+                <TableColumn fx:id="pidColumn" prefWidth="75.99993896484375" text="Product ID" />
+                <TableColumn fx:id="quantityColumn" prefWidth="74.2222900390625" text="Quantity" />
+                  <TableColumn fx:id="ppriceColumn" prefWidth="75.0" text="Total price" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="252.0" layoutY="220.0" onAction="#getTheSelection" prefHeight="51.0" prefWidth="92.0" style="-fx-background-color: #8cd2c1; -fx-background-radius: 20;" text="Show details" textFill="WHITE" />
+            </children></AnchorPane>
+        <HBox prefHeight="100.0" prefWidth="200.0" />
+        <AnchorPane layoutX="35.0" layoutY="40.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="54.0" layoutY="6.0" prefHeight="46.0" prefWidth="296.0" text="My pets Store" textFill="WHITE">
+                    <font>
+                        <Font name="Algerian" size="36.0" />
+                    </font>
+                </Label>
+                <JFXButton focusTraversable="false" layoutX="732.0" layoutY="9.0" onAction="#exitApplication" styleClass="btn" stylesheets="@Style.css" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton focusTraversable="false" layoutX="700.0" layoutY="7.0" onAction="#minimizeApplication" styleClass="btn" stylesheets="@Style.css" text="-" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

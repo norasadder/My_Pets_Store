@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+    <children>
+        <AnchorPane layoutX="35.0" layoutY="105.0" prefHeight="465.0" prefWidth="792.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+            <children>
+                <VBox layoutY="2.0" prefHeight="457.0" prefWidth="792.0" style="-fx-background-radius: 20;">
+                    <children>
+                        <HBox prefHeight="75.0" prefWidth="792.0" />
+                        <HBox prefHeight="351.0" prefWidth="792.0">
+                            <children>
+                        <HBox prefHeight="367.0" prefWidth="149.0" />
+                                <HBox prefHeight="173.0" prefWidth="55.0" />
+                                <JFXButton fx:id="btn" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="349.0" prefWidth="286.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20; -fx-alignment: center;" styleClass="btn" stylesheets="@Style.css" text="Add Employee" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="66.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Picture/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXButton>
+                        <HBox prefHeight="367.0" prefWidth="135.0" />
+                        <AnchorPane prefHeight="351.0" prefWidth="349.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                           <children>
+                              <VBox prefHeight="358.0" prefWidth="249.0">
+                                 <children>
+                                    <HBox prefHeight="26.0" prefWidth="249.0" />
+                                    <HBox prefHeight="106.0" prefWidth="249.0">
+                                       <children>
+                                          <HBox prefHeight="106.0" prefWidth="77.0" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="61.0" prefWidth="85.0">
+                                                   <children>
+                                                      <ImageView fitHeight="61.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Picture/report.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="108.0" text="Generate Report " textFill="WHITE" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="62.0" prefWidth="249.0" />
+                                    <HBox prefHeight="69.0" prefWidth="249.0">
+                                       <children>
+                                          <HBox prefHeight="69.0" prefWidth="27.0" />
+                                          <HBox prefHeight="69.0" prefWidth="72.0">
+                                             <children>
+                                                <Label prefHeight="48.0" prefWidth="72.0" text="File Name :" textFill="WHITE" />
+                                             </children></HBox>
+                                          <HBox prefHeight="17.0" prefWidth="151.0">
+                                             <children>
+                                                <TextField prefHeight="43.0" prefWidth="121.0" />
+                                             </children></HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="29.0" prefWidth="249.0" />
+                                    <HBox prefHeight="67.0" prefWidth="249.0">
+                                       <children>
+                                          <HBox prefHeight="66.0" prefWidth="68.0" />
+                                          <JFXButton prefHeight="73.0" prefWidth="122.0" style="-fx-background-color: #8cd2c1; -fx-background-radius: 20;" text="Generate" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="51.0" prefWidth="249.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <HBox prefHeight="367.0" prefWidth="140.0" />
+                                <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="353.0" prefWidth="282.0" style="-fx-alignment: left; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Picture/Log out.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="10.0" />
+                                    </padding>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXButton>
+                        <HBox prefHeight="367.0" prefWidth="151.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children></AnchorPane>
+        <AnchorPane layoutX="35.0" layoutY="40.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="54.0" layoutY="6.0" prefHeight="46.0" prefWidth="296.0" text="My pets Store" textFill="WHITE">
+                    <font>
+                        <Font name="Algerian" size="36.0" />
+                    </font>
+                </Label>
+                <JFXButton focusTraversable="false" layoutX="732.0" layoutY="9.0" onAction="#exitApplication" styleClass="btn" stylesheets="@Style.css" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton focusTraversable="false" layoutX="700.0" layoutY="7.0" onAction="#minimizeApplication" styleClass="btn" stylesheets="@Style.css" text="-" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="105.0" prefHeight="465.0" prefWidth="792.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+         <children>
+            <VBox layoutY="2.0" prefHeight="457.0" prefWidth="792.0" style="-fx-background-radius: 20;">
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="792.0" />
+                  <HBox prefHeight="77.0" prefWidth="792.0">
+                     <children>
+                        <HBox prefHeight="44.0" prefWidth="204.0" />
+                        <HBox prefHeight="47.0" prefWidth="379.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="395.0" text="Welcome To Our Store .. Start Shopping Now !" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="44.0" prefWidth="220.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="51.0" prefWidth="792.0" />
+                  <HBox prefHeight="137.0" prefWidth="792.0">
+                     <children>
+                        <HBox prefHeight="173.0" prefWidth="55.0" />
+                        <JFXButton fx:id="btn" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="155.0" prefWidth="219.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20; -fx-alignment: center;" styleClass="btn" stylesheets="@Style.css" text="Profile" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="66.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/userMain.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="173.0" prefWidth="55.0" />
+                        <JFXButton fx:id="btn" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="155.0" prefWidth="209.0" style="-fx-alignment: center; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="Pets" textFill="WHITE">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="85.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/Animal.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <HBox prefHeight="173.0" prefWidth="55.0" />
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="173.0" prefWidth="228.0" style="-fx-alignment: center; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="Accessories" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="71.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/Necktie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="173.0" prefWidth="55.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="792.0" />
+                  <HBox prefHeight="147.0" prefWidth="675.0">
+                     <children>
+                        <HBox prefHeight="127.0" prefWidth="42.0" />
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="127.0" prefWidth="209.0" style="-fx-alignment: left; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="My orders" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="67.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/Order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="127.0" prefWidth="44.0" />
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="127.0" prefWidth="197.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="My cart" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="68.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="127.0" prefWidth="43.0" />
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="130.0" prefWidth="210.0" style="-fx-alignment: left; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="Care tips" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="61.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/heart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="127.0" prefWidth="43.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="792.0" />
+                  <HBox prefHeight="143.0" prefWidth="675.0">
+                     <children>
+                        <HBox prefHeight="119.0" prefWidth="154.0">
+                           <children>
+                              <HBox prefHeight="127.0" prefWidth="43.0" />
+                           </children></HBox>
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="127.0" prefWidth="219.0" style="-fx-alignment: left; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="About us" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/about.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="127.0" prefWidth="42.0" />
+                        <JFXButton fx:id="btn" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" onAction="#switchTheScene" prefHeight="130.0" prefWidth="218.0" style="-fx-alignment: left; -fx-background-color: #2f2b43; -fx-background-radius: 20;" styleClass="btn" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/Log out.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="127.0" prefWidth="42.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="792.0" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane layoutX="35.0" layoutY="40.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="54.0" layoutY="6.0" prefHeight="46.0" prefWidth="296.0" text="My pets Store" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton focusTraversable="false" layoutX="732.0" layoutY="9.0" onAction="#exitApplication" styleClass="btn" stylesheets="@Style.css" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton focusTraversable="false" layoutX="700.0" layoutY="7.0" onAction="#minimizeApplication" styleClass="btn" stylesheets="@Style.css" text="-" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

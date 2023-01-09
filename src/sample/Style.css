@@ -1,0 +1,27 @@
+
+.btn:hover{
+  -fx-background-color : #4e4766;
+  -fx-border-color : white;
+  -fx-border-width : 0px 0px 4px 0px;
+}
+
+.slider .axis {
+-fx-tick-label-fill: white;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color:  #8cd2c1;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-body-color: #33ffd6;
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-body-color: #00e6b8;
+}

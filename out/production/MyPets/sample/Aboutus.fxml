@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AboutUsController">
+    <children>
+        <AnchorPane layoutX="35.0" layoutY="105.0" prefHeight="465.0" prefWidth="792.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+            <children>
+                <HBox layoutX="3.0" prefHeight="46.0" prefWidth="785.0">
+                    <children>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="91.0" styleClass="btn" stylesheets="@Style.css" text="Profile" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/userMain.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="83.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Home" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="91.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="My orders" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Order.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="80.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Pets" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Animal.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="99.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Accessories" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Necktie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="88.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Care tips" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/heart.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton onAction="#switchTheScene" prefHeight="55.0" prefWidth="85.0" style="-fx-alignment: left; -fx-background-color: #4e4766;" styleClass="btn" stylesheets="@Style.css" text="about us" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/about.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="85.0" styleClass="btn" stylesheets="@Style.css" text="my cart" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/cart.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="82.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Log out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox layoutX="14.0" layoutY="72.0" prefHeight="371.0" prefWidth="765.0">
+                    <children>
+                        <HBox prefHeight="380.0" prefWidth="43.0" />
+                        <HBox prefHeight="380.0" prefWidth="278.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                            <children>
+                                <VBox prefHeight="371.0" prefWidth="283.0">
+                                    <children>
+                                        <HBox prefHeight="22.0" prefWidth="269.0" />
+                                        <HBox prefHeight="52.0" prefWidth="269.0">
+                                            <children>
+                                                <HBox prefHeight="52.0" prefWidth="38.0" />
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="200.0" text="Contact us  " textFill="WHITE">
+                                                            <font>
+                                                                <Font size="28.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefHeight="21.0" prefWidth="269.0" />
+                                        <HBox prefHeight="43.0" prefWidth="269.0" styleClass="btn" stylesheets="@Style.css">
+                                            <children>
+                                                <HBox prefHeight="43.0" prefWidth="19.0" />
+                                                <HBox prefHeight="0.0" prefWidth="37.0">
+                                                    <children>
+                                                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../Picture/email.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="53.0" prefWidth="53.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="54.0" text="email :" textFill="WHITE">
+                                                            <font>
+                                                                <Font size="16.0" />
+                                                            </font></Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="53.0" prefWidth="141.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="142.0" text="mypets@email.com" textFill="WHITE">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font></Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="53.0" prefWidth="23.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox prefHeight="25.0" prefWidth="269.0" />
+                                        <HBox prefHeight="45.0" prefWidth="269.0" styleClass="btn" stylesheets="@Style.css">
+                                            <children>
+                                                <HBox prefHeight="43.0" prefWidth="269.0">
+                                                    <children>
+                                                        <HBox prefHeight="53.0" prefWidth="13.0" />
+                                                        <HBox prefHeight="0.0" prefWidth="37.0">
+                                                            <children>
+                                                                <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Picture/fb.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="45.0" prefWidth="87.0">
+                                                            <children>
+                                                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="125.0" text="Facebook :" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="16.0" />
+                                                                    </font>
+                                                                </Label>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="45.0" prefWidth="99.0">
+                                                            <children>
+                                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="117.0" text="My Pets Store" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="15.0" />
+                                                                    </font>
+                                                                </Label>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="45.0" prefWidth="13.0" />
+                                                    </children>
+                                                </HBox>
+                                            </children></HBox>
+                                        <HBox prefHeight="28.0" prefWidth="269.0" />
+                                        <HBox prefHeight="39.0" prefWidth="269.0" styleClass="btn" stylesheets="@Style.css">
+                                            <children>
+                                                <HBox prefHeight="25.0" prefWidth="269.0">
+                                                    <children>
+                                                        <HBox prefHeight="39.0" prefWidth="29.0" />
+                                                        <HBox prefHeight="0.0" prefWidth="37.0">
+                                                            <children>
+                                                                <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Picture/instagram.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="39.0" prefWidth="109.0">
+                                                            <children>
+                                                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="85.0" text="instagram :" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="16.0" />
+                                                                    </font>
+                                                                </Label>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="53.0" prefWidth="141.0">
+                                                            <children>
+                                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="56.0" text="mypets" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="15.0" />
+                                                                    </font>
+                                                                </Label>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox prefHeight="53.0" prefWidth="23.0" />
+                                                    </children>
+                                                </HBox>
+                                            </children></HBox>
+                                        <HBox prefHeight="26.0" prefWidth="269.0" />
+                                        <HBox prefHeight="25.0" prefWidth="269.0" styleClass="btn" stylesheets="@Style.css">
+                                            <children>
+                                                <HBox prefHeight="39.0" prefWidth="29.0" />
+                                                <HBox prefHeight="0.0" prefWidth="37.0">
+                                                    <children>
+                                                        <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../Picture/number.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="39.0" prefWidth="109.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="85.0" text="mobile :" textFill="WHITE">
+                                                            <font>
+                                                                <Font size="16.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="53.0" prefWidth="141.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="97.0" text="0599123456" textFill="WHITE">
+                                                            <font>
+                                                                <Font size="15.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="53.0" prefWidth="23.0" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="371.0" prefWidth="71.0" />
+                        <HBox prefHeight="380.0" prefWidth="387.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="325.0" fitWidth="438.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Picture/petStore.png" />
+                           </image>
+                        </ImageView>
+                     </children></HBox>
+                        <HBox prefHeight="380.0" prefWidth="35.0" />
+                    </children>
+                </HBox>
+            </children></AnchorPane>
+        <AnchorPane layoutX="35.0" layoutY="40.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="54.0" layoutY="6.0" prefHeight="46.0" prefWidth="296.0" text="My pets Store" textFill="WHITE">
+                    <font>
+                        <Font name="Algerian" size="36.0" />
+                    </font>
+                </Label>
+                <JFXButton focusTraversable="false" layoutX="732.0" layoutY="9.0" onAction="#exitApplication" styleClass="btn" stylesheets="@Style.css" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton focusTraversable="false" layoutX="700.0" layoutY="7.0" onAction="#minimizeApplication" styleClass="btn" stylesheets="@Style.css" text="-" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

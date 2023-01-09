@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProfileController">
+    <children>
+        <AnchorPane layoutX="35.0" layoutY="105.0" prefHeight="465.0" prefWidth="792.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+            <children>
+                <HBox layoutX="3.0" prefHeight="46.0" prefWidth="785.0">
+                    <children>
+                        <JFXButton onAction="#switchTheScene" prefHeight="51.0" prefWidth="82.0" style="-fx-background-color: #4e4766; -fx-background-radius: 10;" styleClass="btn" stylesheets="@Style.css" text="Profile" textFill="WHITE">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/userMain.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="46.0" prefWidth="83.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Home" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="91.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="My orders" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Order.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="80.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Pets" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Animal.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="99.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Accessories" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Necktie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="88.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Care tips" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/heart.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="85.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="about us" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/about.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="85.0" styleClass="btn" stylesheets="@Style.css" text="my cart" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/cart.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton focusTraversable="false" onAction="#switchTheScene" prefHeight="55.0" prefWidth="82.0" style="-fx-alignment: left;" styleClass="btn" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Picture/Log out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            <VBox layoutX="21.0" layoutY="75.0" prefHeight="374.0" prefWidth="756.0">
+               <children>
+                  <HBox prefHeight="73.0" prefWidth="756.0">
+                     <children>
+                        <VBox prefHeight="71.0" prefWidth="757.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                           <children>
+                              <HBox prefHeight="9.0" prefWidth="756.0" />
+                              <HBox prefHeight="28.0" prefWidth="763.0">
+                                 <children>
+                                    <HBox prefHeight="28.0" prefWidth="80.0" />
+                                    <ImageView fitHeight="28.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Picture/userMain.png" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="28.0" prefWidth="35.0" />
+                                    <Label prefHeight="27.0" prefWidth="81.0" text="Full Name" textFill="WHITE" />
+                                    <HBox prefHeight="28.0" prefWidth="568.0" />
+                                    <HBox prefHeight="31.0" prefWidth="29.0">
+                                       <children>
+                                          <JFXButton fx:id="nameBtn" onAction="#edit" prefHeight="27.0" prefWidth="39.0" styleClass="btn" stylesheets="@Style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="33.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Picture/edit.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="28.0" prefWidth="25.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="756.0">
+                                 <children>
+                                    <HBox prefHeight="34.0" prefWidth="157.0" />
+                                    <HBox prefHeight="34.0" prefWidth="61.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="61.0" text="First Name" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="34.0" prefWidth="153.0">
+                                       <children>
+                                          <TextField fx:id="firstName" editable="false" focusTraversable="false" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 1px 0px; -fx-border-color: white; -fx-text-fill: white; -fx-prompt-text-fill: b3b3b3;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="34.0" prefWidth="74.0" />
+                                    <HBox prefHeight="26.0" prefWidth="73.0">
+                                       <children>
+                                          <Label prefHeight="24.0" prefWidth="68.0" text="Last Name" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="lastName" editable="false" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="756.0" />
+                  <HBox prefHeight="75.0" prefWidth="756.0">
+                     <children>
+                        <HBox prefHeight="73.0" prefWidth="327.0">
+                           <children>
+                              <VBox prefHeight="73.0" prefWidth="334.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                                 <children>
+                                    <HBox prefHeight="77.0" prefWidth="325.0" />
+                                    <HBox prefHeight="40.0" prefWidth="325.0">
+                                       <children>
+                                          <HBox prefHeight="37.0" prefWidth="44.0" />
+                                          <HBox prefHeight="17.0" prefWidth="44.0">
+                                             <children>
+                                                <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Picture/number.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="37.0" prefWidth="97.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="146.0" text="Mobile Number" textFill="WHITE" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="28.0" prefWidth="132.0" />
+                                          <HBox prefHeight="28.0" prefWidth="0.0">
+                                             <children>
+                                                <JFXButton fx:id="phoneBtn" onAction="#edit" styleClass="btn" stylesheets="@Style.css" text=" ">
+                                                   <graphic>
+                                                      <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Picture/edit.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="28.0" prefWidth="20.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox prefHeight="34.0" prefWidth="92.0" />
+                                          <TextField fx:id="phone" editable="false" prefHeight="17.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="73.0" prefWidth="87.0" />
+                        <HBox prefHeight="73.0" prefWidth="349.0">
+                           <children>
+                              <VBox prefHeight="73.0" prefWidth="334.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                                 <children>
+                                    <HBox prefHeight="77.0" prefWidth="325.0" />
+                                    <HBox prefHeight="40.0" prefWidth="325.0">
+                                       <children>
+                                          <HBox prefHeight="37.0" prefWidth="44.0" />
+                                          <HBox prefHeight="17.0" prefWidth="44.0">
+                                             <children>
+                                                <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Picture/calendar.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="37.0" prefWidth="97.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="146.0" text="Birthday" textFill="WHITE" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="28.0" prefWidth="132.0" />
+                                          <HBox prefHeight="28.0" prefWidth="0.0" />
+                                          <HBox prefHeight="28.0" prefWidth="20.0">
+                                             <children>
+                                                <HBox prefHeight="28.0" prefWidth="0.0">
+                                                   <children>
+                                                      <JFXButton fx:id="birhBtn" onAction="#edit" styleClass="btn" stylesheets="@Style.css" text=" ">
+                                                         <graphic>
+                                                            <ImageView fx:id="phoneBtn1" fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../Picture/edit.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </JFXButton>
+                                                   </children>
+                                                </HBox>
+                                             </children></HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <HBox prefHeight="34.0" prefWidth="92.0" />
+                                          <DatePicker fx:id="birth" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="26.0" prefWidth="756.0" />
+                  <HBox prefHeight="67.0" prefWidth="756.0">
+                     <children>
+                        <VBox prefHeight="71.0" prefWidth="757.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                           <children>
+                              <HBox prefHeight="9.0" prefWidth="756.0" />
+                              <HBox prefHeight="28.0" prefWidth="763.0">
+                                 <children>
+                                    <HBox prefHeight="28.0" prefWidth="80.0" />
+                                    <ImageView fitHeight="28.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Picture/location.png" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="28.0" prefWidth="33.0" />
+                                    <Label prefHeight="27.0" prefWidth="81.0" text="Address" textFill="WHITE" />
+                                    <HBox prefHeight="28.0" prefWidth="568.0" />
+                                    <HBox prefHeight="31.0" prefWidth="29.0">
+                                       <children>
+                                          <JFXButton fx:id="addressBtn" onAction="#edit" prefHeight="27.0" prefWidth="39.0" styleClass="btn" stylesheets="@Style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="33.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Picture/edit.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="28.0" prefWidth="25.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="756.0">
+                                 <children>
+                                    <HBox prefHeight="31.0" prefWidth="38.0" />
+                                    <HBox prefHeight="31.0" prefWidth="39.0">
+                                       <children>
+                                          <Label prefHeight="21.0" prefWidth="44.0" text="City" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="34.0" prefWidth="153.0">
+                                       <children>
+                                          <TextField fx:id="city" editable="false" prefHeight="12.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="31.0" prefWidth="49.0" />
+                                    <HBox prefHeight="31.0" prefWidth="39.0">
+                                       <children>
+                                          <Label prefHeight="24.0" prefWidth="52.0" text="street" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="31.0" prefWidth="167.0">
+                                       <children>
+                                          <TextField fx:id="street" editable="false" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="31.0" prefWidth="38.0" />
+                                    <HBox prefHeight="31.0" prefWidth="37.0">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="43.0" text="near" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="near" editable="false" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="26.0" prefWidth="756.0" />
+                  <HBox prefHeight="75.0" prefWidth="756.0">
+                     <children>
+                        <HBox prefHeight="75.0" prefWidth="756.0">
+                           <children>
+                              <HBox prefHeight="73.0" prefWidth="327.0">
+                                 <children>
+                                    <VBox prefHeight="73.0" prefWidth="334.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                                       <children>
+                                          <HBox prefHeight="77.0" prefWidth="325.0" />
+                                          <HBox prefHeight="40.0" prefWidth="325.0">
+                                             <children>
+                                                <HBox prefHeight="37.0" prefWidth="44.0" />
+                                                <HBox prefHeight="17.0" prefWidth="44.0">
+                                                   <children>
+                                                      <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Picture/email.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="37.0" prefWidth="97.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="146.0" text="email" textFill="WHITE" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="28.0" prefWidth="132.0" />
+                                                <HBox prefHeight="28.0" prefWidth="0.0">
+                                                   <children>
+                                                      <JFXButton fx:id="emailBtn" onAction="#edit" styleClass="btn" stylesheets="@Style.css" text=" ">
+                                                         <graphic>
+                                                            <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../Picture/edit.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </JFXButton>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="28.0" prefWidth="20.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="34.0" prefWidth="55.0" />
+                                                <TextField fx:id="email" editable="false" prefHeight="27.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="73.0" prefWidth="87.0" />
+                              <HBox prefHeight="73.0" prefWidth="349.0">
+                                 <children>
+                                    <VBox prefHeight="73.0" prefWidth="334.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+                                       <children>
+                                          <HBox prefHeight="77.0" prefWidth="325.0" />
+                                          <HBox prefHeight="40.0" prefWidth="325.0">
+                                             <children>
+                                                <HBox prefHeight="37.0" prefWidth="44.0" />
+                                                <HBox prefHeight="17.0" prefWidth="44.0">
+                                                   <children>
+                                                      <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Picture/password.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="37.0" prefWidth="97.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="146.0" text="password" textFill="WHITE" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="28.0" prefWidth="132.0" />
+                                                <HBox prefHeight="28.0" prefWidth="0.0">
+                                                   <children>
+                                                      <JFXButton fx:id="passwordBtn" onAction="#edit" styleClass="btn" stylesheets="@Style.css" text=" ">
+                                                         <graphic>
+                                                            <ImageView fitHeight="20.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../Picture/edit.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </JFXButton>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="28.0" prefWidth="20.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="34.0" prefWidth="69.0" />
+                                                <TextField fx:id="password" editable="false" prefHeight="27.0" prefWidth="183.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="26.0" prefWidth="756.0">
+                     <children>
+                        <HBox prefHeight="25.0" prefWidth="321.0" />
+                        <JFXButton onAction="#save" prefHeight="25.0" prefWidth="95.0" styleClass="btn" stylesheets="@Style.css" text="save" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Picture/save.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <HBox prefHeight="25.0" prefWidth="335.0" />
+                     </children></HBox>
+               </children>
+            </VBox>
+            </children></AnchorPane>
+        <AnchorPane layoutX="35.0" layoutY="40.0" prefHeight="30.0" prefWidth="792.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="54.0" layoutY="6.0" prefHeight="46.0" prefWidth="296.0" text="My pets Store" textFill="WHITE">
+                    <font>
+                        <Font name="Algerian" size="36.0" />
+                    </font>
+                </Label>
+                <JFXButton focusTraversable="false" layoutX="732.0" layoutY="9.0" onAction="#exitApplication" styleClass="btn" stylesheets="@Style.css" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton focusTraversable="false" layoutX="700.0" layoutY="7.0" onAction="#minimizeApplication" styleClass="btn" stylesheets="@Style.css" text="-" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

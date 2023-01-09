@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="888.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogOutController">
+    <children>
+        <AnchorPane fx:id="pane" layoutX="8.0" layoutY="94.0" prefHeight="359.0" prefWidth="335.0" style="-fx-background-color: #393351; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="48.0" layoutY="271.0" text="Make a new friend !" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="195.0" fitWidth="221.0" layoutX="14.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Picture/Mypet.png" />
+                    </image>
+                </ImageView>
+                <JFXButton focusTraversable="false" layoutX="24.0" layoutY="48.0" onAction="#minimizeApplication" prefHeight="27.0" prefWidth="108.0" style="-fx-alignment: left; -fx-text-size: 13; -fx-text: bold;" styleClass="btn" stylesheets="@Style.css" text="Minimize" textFill="WHITE" AnchorPane.leftAnchor="24.0">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Picture/Minimize.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton focusTraversable="false" layoutX="24.0" layoutY="20.0" onAction="#exitApplication" prefHeight="27.0" prefWidth="108.0" style="-fx-alignment: left; -fx-text-size: 13; -fx-text: bold;" styleClass="btn" stylesheets="@Style.css" text="Exit" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Picture/Log out.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+            </children></AnchorPane>
+        <AnchorPane layoutX="268.0" layoutY="94.0" prefHeight="359.0" prefWidth="335.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 20;" AnchorPane.bottomAnchor="132.0" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="285.0" AnchorPane.topAnchor="94.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="186.0" prefHeight="42.0" prefWidth="263.0">
+                    <children>
+                        <ImageView fitHeight="38.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Picture/password.png" />
+                            </image>
+                            <viewport>
+                                <Rectangle2D />
+                            </viewport>
+                        </ImageView>
+                        <PasswordField fx:id="passwordLogIn" prefHeight="42.0" prefWidth="252.0" promptText="Enter your password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                    </children>
+                </HBox>
+                <JFXToggleButton fx:id="signUp" layoutX="168.0" layoutY="23.0" onAction="#switchToSignUp" prefHeight="58.0" prefWidth="59.0" text="ToggleButton" toggleColor="#95eddc" toggleLineColor="#457469" />
+                <Label layoutX="234.0" layoutY="42.0" prefHeight="17.0" prefWidth="60.0" text="Sign up" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <AnchorPane layoutY="319.0" prefHeight="40.0" prefWidth="43.0" style="-fx-background-color: #2f2b43;" />
+                <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="270.0" onAction="#switchTheScene" prefHeight="30.0" prefWidth="263.0" ripplerFill="#457469" style="-fx-background-color: #8cd2c1; -fx-background-radius: 10;" text="Log in" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="131.0" prefHeight="42.0" prefWidth="263.0">
+                    <children>
+                        <ImageView fitHeight="38.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Picture/user.png" />
+                            </image>
+                            <viewport>
+                                <Rectangle2D />
+                            </viewport>
+                        </ImageView>
+                        <TextField fx:id="emailLogIn" prefHeight="71.0" prefWidth="236.0" promptText="Enter your email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 1px 0px; -fx-prompt-text-fill: b3b3b3; -fx-border-color: white; -fx-text-fill: white;" />
+                    </children>
+                </HBox>
+            </children></AnchorPane>
+        <QuadCurve controlX="-393.77777099609375" controlY="247.0" endX="-409.3333740234375" endY="53.000022888183594" fill="#8cd2c1" layoutX="832.0" layoutY="41.0" startX="-717.7777709960938" startY="53.00001525878906" stroke="#8cd2c1" strokeType="INSIDE" />
+        <Label layoutX="195.0" layoutY="94.0" prefHeight="46.0" prefWidth="129.0" text="My Pets" textFill="WHITE">
+            <font>
+                <Font name="Eras Bold ITC" size="29.0" />
+            </font>
+        </Label>
+        <Label layoutX="280.0" layoutY="129.0" prefHeight="46.0" prefWidth="128.0" text="Store" textFill="WHITE">
+            <font>
+                <Font name="Algerian" size="36.0" />
+            </font>
+        </Label>
+        <AnchorPane fx:id="account" layoutX="564.0" layoutY="18.0" prefHeight="537.0" prefWidth="323.0" style="-fx-background-color: #393351; -fx-background-radius: 20;" visible="false" AnchorPane.bottomAnchor="18.0" AnchorPane.topAnchor="18.0">
+            <children>
+                <Label layoutX="74.0" layoutY="32.0" prefHeight="35.0" prefWidth="212.0" text="Creat an account" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <VBox layoutX="68.0" layoutY="75.0" prefHeight="372.0" prefWidth="212.0" style="-fx-text-fill: white;">
+                    <children>
+                        <TextField fx:id="fName" prefHeight="42.0" prefWidth="236.0" promptText="First name" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-prompt-text-fill: b3b3b3; -fx-text-fill: white;" />
+                        <TextField fx:id="lName" prefHeight="42.0" prefWidth="236.0" promptText="Last name" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                        <TextField fx:id="city" prefHeight="42.0" prefWidth="236.0" promptText="Ciity" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                        <TextField fx:id="street" prefHeight="42.0" prefWidth="236.0" promptText="Street" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                  <TextField fx:id="near" prefHeight="42.0" prefWidth="236.0" promptText="Near" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                        <TextField fx:id="pNumber" prefHeight="42.0" prefWidth="236.0" promptText="Phone number" style="-fx-background-color: trasparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                        <HBox prefHeight="42.0" prefWidth="212.0" style="-fx-border-width: 0px  0px 1px 0px; -fx-border-color: white;">
+                            <children>
+                                <Label prefHeight="42.0" prefWidth="98.0" text="  BirhDate" textFill="#b3b3b3" />
+                                <DatePicker fx:id="datePicker" prefHeight="41.0" prefWidth="124.0" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="212.0" style="-fx-border-width: 0px  0px 1px 0px; -fx-border-color: white;">
+                            <children>
+                                <JFXRadioButton fx:id="feMale" text="Female" textFill="#b3b3b3">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <selectedColor>
+                                        <Color red="0.08627451211214066" green="0.6274510025978088" blue="0.5215686559677124" />
+                                    </selectedColor>
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="gender" />
+                                    </toggleGroup>
+                                </JFXRadioButton>
+                                <JFXRadioButton fx:id="male" prefHeight="17.0" prefWidth="66.0" text="Male" textFill="#b3b3b3" toggleGroup="$gender">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                    <selectedColor>
+                                        <Color red="0.08627451211214066" green="0.6274510025978088" blue="0.5215686559677124" />
+                                    </selectedColor>
+                                </JFXRadioButton>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="email" prefHeight="42.0" prefWidth="236.0" promptText="Email" style="-fx-background-color: transparet; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                  <PasswordField fx:id="password" prefHeight="42.0" prefWidth="263.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                  <PasswordField fx:id="confirmPassword" prefHeight="42.0" prefWidth="263.0" promptText="Confirm password" style="-fx-background-color: transparent; -fx-border-width: 0px  0px 1px 0px; -fx-border-color: white; -fx-text-fill: white;" />
+                    </children>
+                </VBox>
+                <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="480.0" onAction="#createAnAccount" prefHeight="30.0" prefWidth="212.0" ripplerFill="#457469" style="-fx-background-color: #8cd2c1; -fx-background-radius: 10;" text="Sign up" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </AnchorPane>
+    </children>
+</AnchorPane>
